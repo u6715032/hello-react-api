@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TestApi from "./TestApi";
+import Items from "./pages/Items";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<TestApi />} />
-      <Route path="/test_api" element={<TestApi />} />
+      <Route path="/" element={<Items />} />
     </Routes>
   </BrowserRouter>
 );
