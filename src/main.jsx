@@ -6,6 +6,7 @@ import TestApi from "./TestApi";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
+      <Route path="/" element={<TestApi />} />
       <Route path="/test_api" element={<TestApi />} />
     </Routes>
   </BrowserRouter>
