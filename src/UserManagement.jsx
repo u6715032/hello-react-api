@@ -46,12 +46,19 @@ export default function UserManagement() {
       <ul>
         {users.map((u) => (
           <li key={u._id}>
-            {u.name} ({u.email})
+            <div>
+              <strong>ID:</strong> {u._id}
+            </div>
+            <div>
+              {u.name} ({u.email})
+            </div>
+
             <button onClick={() => updateUser(u._id)}>Update</button>
             <button onClick={() => deleteUser(u._id)}>Delete</button>
           </li>
         ))}
       </ul>
+
     </div>
   );
 }

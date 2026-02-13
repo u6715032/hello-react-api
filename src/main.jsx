@@ -1,3 +1,5 @@
+import Profile from "./Profile";
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -7,6 +9,7 @@ import UserManagement from "./UserManagement";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
+      <Route path="/profile/:id" element={<Profile />} />
       <Route path="/" element={<Items />} />
       <Route path="/users" element={<UserManagement />} />
     </Routes>
